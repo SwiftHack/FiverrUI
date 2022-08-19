@@ -11,6 +11,8 @@
 		E9256EE828B021C70048DA9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9256EE728B021C70048DA9A /* ContentView.swift */; };
 		E9256EEA28B021C90048DA9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9256EE928B021C90048DA9A /* Assets.xcassets */; };
 		E9256EED28B021C90048DA9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9256EEC28B021C90048DA9A /* Preview Assets.xcassets */; };
+		E9256EF428B021DD0048DA9A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9256EF328B021DD0048DA9A /* MainTabView.swift */; };
+		E9256EF728B031E70048DA9A /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9256EF628B031E70048DA9A /* Tab.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		E9256EE728B021C70048DA9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E9256EE928B021C90048DA9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9256EEC28B021C90048DA9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E9256EF328B021DD0048DA9A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E9256EF628B031E70048DA9A /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		E9256EE428B021C70048DA9A /* FiverrUI */ = {
 			isa = PBXGroup;
 			children = (
+				E9256EF528B031D70048DA9A /* Model */,
+				E9256EF328B021DD0048DA9A /* MainTabView.swift */,
 				E9256EE528B021C70048DA9A /* FiverrUIApp.swift */,
 				E9256EE728B021C70048DA9A /* ContentView.swift */,
 				E9256EE928B021C90048DA9A /* Assets.xcassets */,
@@ -65,6 +71,14 @@
 				E9256EEC28B021C90048DA9A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E9256EF528B031D70048DA9A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E9256EF628B031E70048DA9A /* Tab.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,8 @@
 			files = (
 				E9256EE828B021C70048DA9A /* ContentView.swift in Sources */,
 				E9256EE628B021C70048DA9A /* FiverrUIApp.swift in Sources */,
+				E9256EF428B021DD0048DA9A /* MainTabView.swift in Sources */,
+				E9256EF728B031E70048DA9A /* Tab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
