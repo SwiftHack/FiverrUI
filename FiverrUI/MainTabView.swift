@@ -59,7 +59,7 @@ struct MainTabView: View {
                
                 .tag(Tab.orders)
             
-            Text(Tab.profile.description)
+            ProfileView()
                 .tabItem {
                                     
                     Image(systemName: selectedTab == .profile ? "person.crop.circle.fill": "person.crop.circle")
@@ -75,6 +75,6 @@ struct MainTabView: View {
 
 struct MainTabView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainTabView()
     }
 }
