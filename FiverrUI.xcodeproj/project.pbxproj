@@ -15,6 +15,7 @@
 		E96F085D28B083CD000527C5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F085C28B083CD000527C5 /* ProfileView.swift */; };
 		E96F085F28B08685000527C5 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F085E28B08685000527C5 /* ProfileHeader.swift */; };
 		E96F086128B0918A000527C5 /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F086028B0918A000527C5 /* SettingsItem.swift */; };
+		E9F1735D28B48223001C691C /* ManageOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1735C28B48223001C691C /* ManageOrdersView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		E96F085C28B083CD000527C5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E96F085E28B08685000527C5 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		E96F086028B0918A000527C5 /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
+		E9F1735C28B48223001C691C /* ManageOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageOrdersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				E9256EEB28B021C90048DA9A /* Preview Content */,
 				E96F085C28B083CD000527C5 /* ProfileView.swift */,
 				E96F085E28B08685000527C5 /* ProfileHeader.swift */,
+				E9F1735C28B48223001C691C /* ManageOrdersView.swift */,
 			);
 			path = FiverrUI;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 				E9256EE628B021C70048DA9A /* FiverrUIApp.swift in Sources */,
 				E96F085D28B083CD000527C5 /* ProfileView.swift in Sources */,
 				E9256EF428B021DD0048DA9A /* MainTabView.swift in Sources */,
+				E9F1735D28B48223001C691C /* ManageOrdersView.swift in Sources */,
 				E96F085F28B08685000527C5 /* ProfileHeader.swift in Sources */,
 				E9256EF728B031E70048DA9A /* Tab.swift in Sources */,
 				E96F086128B0918A000527C5 /* SettingsItem.swift in Sources */,

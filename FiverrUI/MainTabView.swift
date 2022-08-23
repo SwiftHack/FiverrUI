@@ -49,7 +49,7 @@ struct MainTabView: View {
                 }
                 .tag(Tab.search)
             
-            Text(Tab.orders.description)
+           ManageOrdersView()
                 .tabItem {
                     
                     Image(systemName: selectedTab == .orders ? "list.bullet.rectangle.portrait.fill": "list.bullet.rectangle.portrait")
