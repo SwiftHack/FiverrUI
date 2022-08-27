@@ -47,10 +47,10 @@ struct ProfileHeader: View {
                             Spacer()
                             
                             Circle()
-                                .strokeBorder(.white, lineWidth: 2.5)
+                                .strokeBorder(.white, lineWidth: 2)
                                 .background(Circle().fill(.green))
                                 .frame(width: 15, height: 15)
-                            .padding(.leading, 60)
+                            .padding(.leading, 50)
                         }
 
                     )

@@ -32,7 +32,7 @@ struct MainTabView: View {
                 }
                 .tag(Tab.home)
             
-            Text(Tab.inbox.description)
+            InboxView()
                 .tabItem {
                     
                     Image(systemName: selectedTab == .inbox ? "envelope.fill": "envelope")

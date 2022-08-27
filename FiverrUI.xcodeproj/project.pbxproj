@@ -15,6 +15,7 @@
 		E96F085D28B083CD000527C5 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F085C28B083CD000527C5 /* ProfileView.swift */; };
 		E96F085F28B08685000527C5 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F085E28B08685000527C5 /* ProfileHeader.swift */; };
 		E96F086128B0918A000527C5 /* SettingsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E96F086028B0918A000527C5 /* SettingsItem.swift */; };
+		E9D5816628BA51CD00FD3C72 /* InboxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D5816528BA51CD00FD3C72 /* InboxView.swift */; };
 		E9F1735D28B48223001C691C /* ManageOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1735C28B48223001C691C /* ManageOrdersView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +29,7 @@
 		E96F085C28B083CD000527C5 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		E96F085E28B08685000527C5 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		E96F086028B0918A000527C5 /* SettingsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsItem.swift; sourceTree = "<group>"; };
+		E9D5816528BA51CD00FD3C72 /* InboxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxView.swift; sourceTree = "<group>"; };
 		E9F1735C28B48223001C691C /* ManageOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageOrdersView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,13 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				E9256EF528B031D70048DA9A /* Model */,
-				E9256EF328B021DD0048DA9A /* MainTabView.swift */,
+				E9D5816028BA514500FD3C72 /* Views */,
 				E9256EE528B021C70048DA9A /* FiverrUIApp.swift */,
 				E9256EE928B021C90048DA9A /* Assets.xcassets */,
 				E9256EEB28B021C90048DA9A /* Preview Content */,
-				E96F085C28B083CD000527C5 /* ProfileView.swift */,
-				E96F085E28B08685000527C5 /* ProfileHeader.swift */,
-				E9F1735C28B48223001C691C /* ManageOrdersView.swift */,
 			);
 			path = FiverrUI;
 			sourceTree = "<group>";
@@ -88,6 +87,50 @@
 				E96F086028B0918A000527C5 /* SettingsItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		E9D5816028BA514500FD3C72 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E9D5816428BA51A200FD3C72 /* Inbox */,
+				E9D5816328BA519400FD3C72 /* Orders */,
+				E9D5816228BA518200FD3C72 /* main */,
+				E9D5816128BA515200FD3C72 /* Profile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E9D5816128BA515200FD3C72 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				E96F085C28B083CD000527C5 /* ProfileView.swift */,
+				E96F085E28B08685000527C5 /* ProfileHeader.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		E9D5816228BA518200FD3C72 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				E9256EF328B021DD0048DA9A /* MainTabView.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		E9D5816328BA519400FD3C72 /* Orders */ = {
+			isa = PBXGroup;
+			children = (
+				E9F1735C28B48223001C691C /* ManageOrdersView.swift */,
+			);
+			path = Orders;
+			sourceTree = "<group>";
+		};
+		E9D5816428BA51A200FD3C72 /* Inbox */ = {
+			isa = PBXGroup;
+			children = (
+				E9D5816528BA51CD00FD3C72 /* InboxView.swift */,
+			);
+			path = Inbox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +208,7 @@
 				E9256EF428B021DD0048DA9A /* MainTabView.swift in Sources */,
 				E9F1735D28B48223001C691C /* ManageOrdersView.swift in Sources */,
 				E96F085F28B08685000527C5 /* ProfileHeader.swift in Sources */,
+				E9D5816628BA51CD00FD3C72 /* InboxView.swift in Sources */,
 				E9256EF728B031E70048DA9A /* Tab.swift in Sources */,
 				E96F086128B0918A000527C5 /* SettingsItem.swift in Sources */,
 			);
