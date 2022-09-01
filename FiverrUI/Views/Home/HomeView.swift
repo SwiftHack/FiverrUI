@@ -50,6 +50,16 @@ struct HomeView: View {
                     .clipped()
                     .cornerRadius(8)
                     .padding()
+                
+                
+                
+                HStack {
+                    Text("What's new on Fiver?")
+                        .font(.headline)
+                    Spacer()
+                }.padding()
+                
+                NewOnFiverrView()
                     
                 
             }
@@ -97,5 +107,38 @@ struct PoularServicesView: View {
         .frame(width: cardWidth, height: 180)
         .cornerRadius(8)
         .shadow(color: Color(.systemGray3), radius: 5, x: 0, y: 2)
+    }
+}
+
+struct NewOnFiverrView: View {
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(0..<10) {_ in
+                    Image("fiverImage2")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: UIScreen.main.bounds.width - 100)
+                    
+                        .overlay(
+                            ZStack {
+                                Color.black.opacity(0.5)
+                                VStack {
+                                    Text("Explore beautiful work, picked for you.")
+                                        .foregroundColor(.white)
+                                        .font(.title2)
+                                        .padding()
+                                    Spacer()
+                                    
+                                }
+                            }
+                        )
+                        .clipped()
+                        .cornerRadius(8)
+                        .padding(3)
+                }
+            }.padding()
+                .padding(.top, -20)
+        }
     }
 }
