@@ -12,18 +12,7 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                HStack {
-                    Text("Popular services")
-                        .font(.headline)
-                    
-                    Spacer()
-                    
-                    Button(action: {}) {
-                        Text("See All")
-                            .font(.subheadline)
-                        
-                    }
-                }.padding(12)
+                SectionTitleWithSeeAllButtonView(sectionTitle: "Popular services")
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack {
@@ -60,6 +49,11 @@ struct HomeView: View {
                 }.padding()
                 
                 NewOnFiverrView()
+                
+                SectionTitleWithSeeAllButtonView(sectionTitle: "Recently viewed & more")
+
+                RecentlyViewedView()
+             
                     
                 
             }
@@ -139,6 +133,115 @@ struct NewOnFiverrView: View {
                 }
             }.padding()
                 .padding(.top, -20)
+        }
+    }
+}
+
+struct SectionTitleWithSeeAllButtonView: View {
+    let sectionTitle: String
+    var body: some View {
+        HStack {
+            Text(sectionTitle)
+                .font(.headline)
+            
+            Spacer()
+            
+            Button(action: {}) {
+                Text("See All")
+                    .font(.subheadline)
+                
+            }
+        }.padding(12)
+    }
+}
+
+struct RecentlyViewedView: View {
+    var body: some View {
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack {
+                ForEach(0..<10) { item in
+                    VStack {
+                        Image("mockImage")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(height: 150)
+                            .frame(maxWidth: .infinity)
+                            .clipped()
+                        
+                        
+                        HStack {
+                            Image("fiverImage2")
+                                .resizable()
+                                .scaledToFill()
+                                .frame(width: 25, height: 25)
+                                .clipShape(Circle())
+                            
+                            VStack(alignment: .leading) {
+                                Text("nickfinck")
+                                    .font(.system(size: 10, weight: .medium))
+                                
+                                Text("New Seller")
+                                    .font(.system(size: 10))
+                                    .foregroundColor(.gray)
+                            }
+                            
+                            Spacer()
+                            
+                            Button(action: {}) {
+                                Image(systemName: "heart")
+                                    .foregroundColor(.gray)
+                            }.padding(.horizontal, 8)
+                            
+                        }
+                        .padding(.top, 8)
+                        
+                        .padding(.leading, 5)
+                        
+                        
+                        Text("Edit redesign redraw color change or fix your logo")
+                            .font(.system(size: 12, weight: .regular))
+                            .padding(.vertical, 8)
+                            .padding(.horizontal, 5)
+                        
+                        HStack(spacing: 1) {
+                            Image(systemName: "star.fill")
+                            Text("4.9")
+                                .padding(.top, 3)
+                            
+                            Text("(40)")
+                                .foregroundColor(.gray)
+                                .font(.system(size: 12, weight: .regular))
+                                .padding(.top, 3)
+                            
+                            
+                            Spacer()
+                            
+                            
+                            Text("From ")
+                                .font(.system(size: 12, weight: .regular))
+                                .foregroundColor(.gray)
+                            
+                            +
+                            
+                            Text("$15")
+                                .font(.system(size: 13, weight: .medium))
+                                .foregroundColor(.black)
+                            
+                        }.padding(.horizontal, 5)
+                            .font(.system(size: 12, weight: .semibold))
+                            .foregroundColor(.orange)
+                        
+                        
+                        Spacer()
+                    }
+                    
+                    .background(Color.white)
+                    .frame(width: 250, height: 280)
+                    .cornerRadius(8)
+                    .shadow(color: Color(.systemGray3).opacity(0.5), radius: 5, x: 0, y: 2)
+                    
+                }
+            }.padding()
         }
     }
 }
