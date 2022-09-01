@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E91EA72328C0540800517149 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91EA72228C0540800517149 /* HomeView.swift */; };
 		E9256EE628B021C70048DA9A /* FiverrUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9256EE528B021C70048DA9A /* FiverrUIApp.swift */; };
 		E9256EEA28B021C90048DA9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9256EE928B021C90048DA9A /* Assets.xcassets */; };
 		E9256EED28B021C90048DA9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9256EEC28B021C90048DA9A /* Preview Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E91EA72228C0540800517149 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E9256EE228B021C70048DA9A /* FiverrUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FiverrUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9256EE528B021C70048DA9A /* FiverrUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiverrUIApp.swift; sourceTree = "<group>"; };
 		E9256EE928B021C90048DA9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -44,6 +46,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E91EA72128C053F400517149 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E91EA72228C0540800517149 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		E9256ED928B021C70048DA9A = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +102,7 @@
 		E9D5816028BA514500FD3C72 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				E91EA72128C053F400517149 /* Home */,
 				E9D5816428BA51A200FD3C72 /* Inbox */,
 				E9D5816328BA519400FD3C72 /* Orders */,
 				E9D5816228BA518200FD3C72 /* main */,
@@ -203,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E91EA72328C0540800517149 /* HomeView.swift in Sources */,
 				E9256EE628B021C70048DA9A /* FiverrUIApp.swift in Sources */,
 				E96F085D28B083CD000527C5 /* ProfileView.swift in Sources */,
 				E9256EF428B021DD0048DA9A /* MainTabView.swift in Sources */,
