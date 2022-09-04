@@ -52,9 +52,15 @@ struct HomeView: View {
                 
                 SectionTitleWithSeeAllButtonView(sectionTitle: "Recently viewed & more")
 
-                RecentlyViewedView()
+                RecentlyViewedView(isSaved: false)
              
                     
+                SectionTitleWithSeeAllButtonView(sectionTitle: "Recently Saved")
+                RecentlyViewedView(isSaved: true)
+
+                
+                SectionTitleWithSeeAllButtonView(sectionTitle: "What sparks your interest?")
+                
                 
             }
             
@@ -156,6 +162,8 @@ struct SectionTitleWithSeeAllButtonView: View {
 }
 
 struct RecentlyViewedView: View {
+    var isSaved: Bool
+    
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
@@ -178,18 +186,18 @@ struct RecentlyViewedView: View {
                             
                             VStack(alignment: .leading) {
                                 Text("nickfinck")
-                                    .font(.system(size: 10, weight: .medium))
+                                    .font(.system(size: 12, weight: .medium))
                                 
                                 Text("New Seller")
-                                    .font(.system(size: 10))
+                                    .font(.system(size: 12))
                                     .foregroundColor(.gray)
                             }
                             
                             Spacer()
                             
                             Button(action: {}) {
-                                Image(systemName: "heart")
-                                    .foregroundColor(.gray)
+                                Image(systemName: isSaved ? "heart.fill" : "heart")
+                                    .foregroundColor(isSaved ? .red : .gray)
                             }.padding(.horizontal, 8)
                             
                         }
@@ -206,12 +214,12 @@ struct RecentlyViewedView: View {
                         HStack(spacing: 1) {
                             Image(systemName: "star.fill")
                             Text("4.9")
-                                .padding(.top, 3)
+                                .padding(.top, 1)
                             
                             Text("(40)")
                                 .foregroundColor(.gray)
                                 .font(.system(size: 12, weight: .regular))
-                                .padding(.top, 3)
+                                .padding(.top, 1.5)
                             
                             
                             Spacer()
@@ -224,11 +232,11 @@ struct RecentlyViewedView: View {
                             +
                             
                             Text("$15")
-                                .font(.system(size: 13, weight: .medium))
+                                .font(.system(size: 15.5, weight: .medium))
                                 .foregroundColor(.black)
                             
-                        }.padding(.horizontal, 5)
-                            .font(.system(size: 12, weight: .semibold))
+                        }.padding(.horizontal, 8)
+                            .font(.system(size: 14, weight: .semibold))
                             .foregroundColor(.orange)
                         
                         
@@ -245,3 +253,7 @@ struct RecentlyViewedView: View {
         }
     }
 }
+
+
+
+
