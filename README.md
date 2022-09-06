@@ -1,12 +1,8 @@
 # FiverUI
 
-A clone of Fiverr's ios app using SwiftUI, combine and MVVM.
+A clone of Fiverr's ios app using SwiftUI, and eventually combine and MVVM.
 
-This is just a toy project to practice more of my swiftUI skills.
-
-
-
+Just a toy project to play with swiftUI.
 
 Demo:
-
-Coming soon...🚧
+![](https://github.com/samisays11/FiverrUI/blob/master/Gif-Demo/fiverUIAppDemo.gif)
